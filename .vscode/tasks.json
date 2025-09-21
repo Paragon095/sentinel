@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cargo build (debug)",
+      "type": "shell",
+      "command": "cargo build --workspace",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "cargo build (release)",
+      "type": "shell",
+      "command": "cargo build --workspace --release",
+      "group": "build",
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "cargo clippy (all, deny warnings)",
+      "type": "shell",
+      "command": "cargo clippy --workspace --all-targets -- -D warnings",
+      "group": "build",
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "cargo clippy (strict)",
+      "type": "shell",
+      "command": "cargo clippy --workspace --all-targets -- -D warnings -W clippy::pedantic -W clippy::nursery -W clippy::cargo -A clippy::multiple_crate_versions",
+      "group": "build",
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "cargo test (workspace)",
+      "type": "shell",
+      "command": "cargo test --workspace",
+      "group": "test",
+      "problemMatcher": ["$rustc"]
+    }
+  ]
+}

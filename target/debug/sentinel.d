@@ -1,0 +1,1 @@
+C:\Users\Alan\ Wiczolek\Desktop\AI\ Project\sentinel\target\debug\sentinel.exe: C:\Users\Alan\ Wiczolek\Desktop\AI\ Project\sentinel\bins\sentinel\src\main.rs C:\Users\Alan\ Wiczolek\Desktop\AI\ Project\sentinel\core\src\lib.rs

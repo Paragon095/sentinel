@@ -1,0 +1,6 @@
+[alias]
+run-sentinel = "run -p sentinel"
+scan         = "run -p scanner --"
+train        = "run -p trainer --"
+lint         = "clippy --workspace --all-targets -- -D warnings"
+lintp        = "clippy --workspace --all-targets -- -D warnings -W clippy::pedantic -W clippy::nursery -W clippy::cargo -A clippy::multiple_crate_versions"

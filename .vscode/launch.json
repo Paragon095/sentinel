@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: sentinel",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": { "args": ["run", "-p", "sentinel"] },
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug: scanner",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": { "args": ["run", "-p", "scanner", "--"] },
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug: trainer",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": { "args": ["run", "-p", "trainer", "--"] },
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\anstyle-9bd7793d2693c32d.d: C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\lib.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\macros.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\color.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\effect.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\reset.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\style.rs
+
+C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\libanstyle-9bd7793d2693c32d.rmeta: C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\lib.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\macros.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\color.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\effect.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\reset.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\style.rs
+
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\lib.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\macros.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\color.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\effect.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\reset.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-1.0.11\src\style.rs:

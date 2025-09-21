@@ -1,0 +1,13 @@
+[workspace]
+members = ["core", "bins/sentinel", "bins/scanner", "bins/trainer"]
+resolver = "2"
+
+[profile.dev]
+debug = 2
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = true

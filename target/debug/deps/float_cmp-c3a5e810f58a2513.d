@@ -1,0 +1,10 @@
+C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\float_cmp-c3a5e810f58a2513.d: C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\lib.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\macros.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps_eq.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\eq.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ratio.rs
+
+C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\libfloat_cmp-c3a5e810f58a2513.rmeta: C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\lib.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\macros.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps_eq.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\eq.rs C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ratio.rs
+
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\lib.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\macros.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ulps_eq.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\eq.rs:
+C:\Users\Alan\ Wiczolek\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\float-cmp-0.10.0\src\ratio.rs:
