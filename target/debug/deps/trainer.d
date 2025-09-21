@@ -3,5 +3,3 @@ C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\trainer.d: 
 C:\Users\Alan Wiczolek\Desktop\AI Project\sentinel\target\debug\deps\trainer.exe: bins\trainer\src\main.rs
 
 bins\trainer\src\main.rs:
-
-# env-dep:CARGO_PKG_NAME=trainer

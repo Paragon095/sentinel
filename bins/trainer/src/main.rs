@@ -1,33 +1,49 @@
-use ai_core::{cfg::{self, AppId}, coremem, logx};
+use anyhow::Result;
+use ai_core::{
+    cfg::{self, AppId},
+    logx,
+    store::{open_default, DefaultKv, KvSerde, ns},
+};
 use clap::Parser;
 use tracing::{debug, info};
 
-const APP: AppId = AppId {
-    qualifier: "com",
-    organization: "local",
-    application: env!("CARGO_PKG_NAME"), // "trainer"
-};
+const APP: AppId = AppId { qualifier: "com", organization: "local", application: "sentinel" };
 
-#[derive(Parser)]
-#[command(name=env!("CARGO_PKG_NAME"), version, about="AI trainer")]
+#[derive(Parser, Debug)]
+#[command(author, version, about)]
 struct Cli {
-    /// Steps to run
+    /// Number of steps to “train”
     #[arg(long, default_value_t = 100)]
     steps: u32,
-    /// Log level override (info,debug,trace)
+
+    /// Log level override (info|debug|trace…)
     #[arg(long)]
     log: Option<String>,
 }
 
-fn main() {
+fn open_kv() -> Result<DefaultKv> {
+    let dir = cfg::config_dir(&APP)?;
+    open_default(dir.join("kv"))
+}
+
+fn main() -> Result<()> {
     let cli = Cli::parse();
 
-    // Config path derives from this crate's package name (no literal).
-    let c = cfg::load_or_init(&APP).expect("cfg");
-    let level = cli.log.as_deref().unwrap_or(&c.log_level);
-    logx::init(level);
+    let mut conf = cfg::load_or_init(&APP)?;
+    if let Some(lv) = &cli.log {
+        conf.log_level = lv.clone();
+    }
+    logx::init(&conf.log_level);
 
-    info!("{} start steps={}", APP.application, cli.steps);
-    let warm = coremem::init_mem();
-    debug!("warmup={warm}");
+    let kv = open_kv()?;
+
+    info!("trainer start steps={}", cli.steps);
+    debug!("warmup=mem:init");
+
+    if let Some(prev) = kv.get_t::<u32>(&ns("trainer", "last_steps"))? {
+        debug!("previous last_steps={}", prev);
+    }
+
+    kv.put_t(&ns("trainer", "last_steps"), &cli.steps)?;
+    Ok(())
 }

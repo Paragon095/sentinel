@@ -3,10 +3,28 @@ name = "sentinel"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+# Enable the HTTP/HTTPS control plane (Axum).
+web-api = ["dep:axum", "dep:axum-server"]
+# Run on a single-threaded Tokio runtime (tiny footprint).
+rt-single = []
+# Enable HTTP actions in the runner (reqwest w/ rustls).
+runner-http = ["dep:reqwest"]
+
 [dependencies]
 ai_core = { path = "../../core" }
 tracing = "0.1"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"                            # <— NOT optional; runner needs it
+tokio = { version = "1", features = [
+  "rt-multi-thread", "macros", "signal", "time", "sync", "net", "process"
+] }
+num_cpus = "1.16"
 
-[dev-dependencies]
-assert_cmd = "2"
-predicates = "3"
+# Optional web stack (only built if --features web-api)
+axum = { version = "0.7", optional = true }
+axum-server = { version = "0.6", features = ["tls-rustls"], optional = true }
+
+# Optional HTTP client for runner (only if --features runner-http)
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"], optional = true }
